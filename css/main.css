@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  background-color: #FFC600;
+  cursor: pointer;
+  border: none;
+  transition: .3s ease-in;
+}
+
+.btn:hover {
+  background-color: #F6D22F;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 50px;
+}
+
+.header {
+  background-image: url(../img/Crayfish-bg.jpg);
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top 40% right;
+}
+
+.logo-wrapper {
+  margin-bottom: 120px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.logo-wrapper img {
+  width: 200px;
+}
+
+.main-title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 52px;
+  line-height: 1.2;
+}
+
+.yellow {
+  color: #FFC600;
+}
+
+.section {
+  padding-bottom: 180px;
+}
+
+.header__content {
+  padding-bottom: 180px;
+  width: 530px;
+}
+
+.header .socials {
+  margin-bottom: 60px;
+}
+
+.header .socials a {
+  text-decoration: none;
+}
+
+.header .socials a:not(:last-child) {
+  margin-right: 12px;
+}
+
+.socials a svg {
+  width: 50px;
+  height: 50px;
+}
+
+.socials a svg path {
+  stroke: #FFC600;
+  transition: .3s ease-in;
+}
+
+.socials a:hover svg path {
+  stroke: #F1DB77;
+}
+
+.form-wrapper {
+  margin-bottom: 60px;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  width: calc(100% - 7px);
+  height: 50px;
+  align-items: center;
+  border: 2px solid #FFC600;
+  border-right: none;
+  border-radius: 30px;
+  height: 50px;
+  box-sizing: unset;
+}
+
+.form input {
+  padding: 15px;
+  padding-left: 22px;
+  width: 65%;
+  height: 50px;
+  background:transparent;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: #fff;
+  /* border: 2px solid #FFC600;
+  border-radius: 30px 0 0 30px; */
+}
+
+.form input:focus,
+.form input:active {
+  outline: none;
+}
+
+.form input::placeholder {
+  color: #fff;
+}
+
+.form .btn {
+  position: absolute;
+  right: -5px;
+  width: 35%;
+  height: 54px;
+  border-radius: 28px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.form .btn img {
+  display: none;
+}
+
+.header__schedule {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+
+.header__schedule p {
+  margin: 0;
+}
+
+.header__schedule p:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.header__schedule a {
+  text-decoration: none;
+  transition: .3s ease-in;
+}
+
+.header__schedule a:hover {
+  color: #F1DB77;
+}
+
+.header__schedule-days {
+  margin-right: 20px;
+}
+
+.header__schedule-time {
+  margin-right: 32px;
+}
+
+.products {
+  padding-top: 140px;
+}
+
+.products__nav {
+  margin-bottom: 60px;
+}
+
+.products__nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.products__slider {
+  display: none;
+}
+
+.products__item {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 7px 15px;
+  width: 240px;
+  text-align: right;
+  color: #000;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 3px solid transparent;
+}
+
+.products__item p {
+  margin: 0;
+  width: 90%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.products__item .img-holder {
+  margin-right: 8px;
+  width: 15%;
+}
+
+.products__item .img-holder svg {
+  display: block;
+  height: 39px;
+  width: 28px;
+}
+
+.products__item .img-holder .boiled {
+  fill: #B7002F;
+}
+
+.products__item .img-holder .raw {
+  fill: #000;
+}
+
+.products__item--static.is-active {
+  color: #FFC600;
+  background-color: transparent;
+  border: 3px solid #FFC600;
+}
+
+.products__item--static.is-active .active {
+  fill: #FFC600;
+}
+
+.products__block {
+  /* display: none; */
+  height: 0;
+  visibility: hidden;
+}
+
+.products__block.is-active {
+  height: auto;
+  visibility: visible;
+}
+
+.products__card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 80px;
+}
+
+.card {
+  position: relative;
+  width: calc(50% - 12px);
+}
+
+.card .img-holder {
+  position:absolute;
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: right;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.card__content {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.164);
+}
+
+.card__item {
+  display: flex;
+  margin-left: auto;
+  justify-content: space-between;
+  width: 55%;
+}
+
+.card__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.card__item-name {
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.card__item-price {
+  display: flex;
+  align-items: center;
+  border: 4px solid #B7002F;
+  border-radius: 10px;
+}
+
+.card__item-price p {
+  margin: 0;
+  padding: 0 7px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.item-name {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.small {
+  font-size: 16px;
+}
+
+.promo {
+  padding-bottom: 60px;
+}
+
+.promo__banner {
+  background-color: #000;
+}
+
+.info__wrapper p {
+  margin: 0;
+  text-align: center;
+  font-size: 28px;
+  color: #FFC600;
+}
+
+.info__wrapper p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.footer {
+  padding: 120px 0;
+  background-color: rgba(255, 255, 255, 0.164);;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__contacts {
+  display: flex;
+}
+
+.footer__contacts .socials {
+  margin-right: 12px;
+}
+
+.footer__contacts .socials a {
+  margin-right: 4px;
+}
+
+.footer .socials a svg {
+  width: 40px;
+  height: 40px;
+}
+
+.footer__number p {
+  margin: 0;
+}
+
+.footer__number p:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__form {
+  width: 50%;
+}
+
+.none {
+  display: none;
+}
+
+
+
+
+
+

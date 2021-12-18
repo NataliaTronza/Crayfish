@@ -1,0 +1,323 @@
+@media (max-width: 1170px) {
+  .products__card-wrapper {
+    display: none;
+  }
+
+  .products__slider {
+    display: block;
+  }
+
+  .products__slider .card__inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 560px;
+  }
+
+  .slick-track {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 16px;
+    padding-bottom: 36px;
+  }
+  
+  .slick-list {
+    overflow: hidden;
+  }
+  
+  .slick-dots {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slick-dots li {
+    list-style: none;
+    margin: 0 5px;
+  }
+  
+  .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #FFC600;
+    padding: 0;
+    box-sizing: content-box;
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: #FFC600;
+  }
+}
+
+@media (max-width: 1120px) {
+  .products__nav-list {
+    justify-content: unset;
+    column-gap: 16px;
+  }
+
+  .products__item {
+    width: calc(25% - 12px);
+  }
+
+  .products__item p {
+    font-size: 16px;
+  }
+
+  .footer {
+    padding: 80px 0;
+  }
+
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__contacts {
+    margin-bottom: 40px;
+  }
+
+  .footer__form {
+    width: 500px;
+  }
+}
+
+@media (max-width: 830px) {
+  .products__nav-list {
+    flex-wrap: wrap;
+    row-gap: 16px;
+  }
+
+  .products__item {
+    width: calc(50% - 8px);
+  }
+}
+
+@media (max-width: 750px) {
+  .logo-wrapper {
+    margin-bottom: 80px;
+  }
+
+  .logo-wrapper img {
+    width: 140px;
+  }
+
+  .main-title {
+    margin-bottom: 20px;
+    font-size: 42px;
+  }
+
+  .section {
+    padding-bottom: 120px;
+  }
+
+  .header__content {
+    padding-bottom: 80px;
+    width: 100%;
+  }
+
+  .header .socials {
+    margin-bottom: 30px;
+  }
+
+  .form input {
+    padding-left: 16px;
+    height: 46px;
+    font-size: 20px;
+  }
+
+  .form .btn {
+    height: 52px;
+    font-size: 12px;
+  }
+
+  .products {
+    padding-top: 60px;
+  }
+
+  .products__slider .card__inner {
+    width: 100%;
+  }
+
+  .info__wrapper p {
+    font-size: 24px;
+  }
+
+  .promo {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 615px) {
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .card__title {
+    font-size: 24px;
+  }
+
+  .card__inner .img-holder {
+    width: 34%;
+  }
+
+  .card__content {
+    padding: 15px;
+  }
+
+  .card__item-name {
+    font-size: 14px;
+  }
+
+  .item-name {
+    font-size: 20px;
+  }
+
+  .card__item-price p {
+    font-size: 24px;
+  }
+
+  .info__wrapper p {
+    font-size: 16px;
+  }
+
+  .info__wrapper p:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .footer__form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 560px) {
+  .logo-wrapper img {
+    width: 90px;
+  }
+
+  .logo-wrapper {
+    margin-bottom: 50px;
+  }
+
+  .main-title {
+    font-size: 37px;
+  }
+
+  .section {
+    padding-bottom: 80px;
+  }
+
+  .socials a svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header__schedule {
+    flex-wrap: wrap;
+    font-size: 24px;
+  }
+
+  .header__schedule-number {
+    margin-top: 25px;
+    width: 100%;
+  }
+
+  .header__schedule-time {
+    margin-right: 0;
+  }
+
+  .form-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .form input {
+    width: 80%;
+  }
+
+  .form .btn {
+    width: 20%;
+  }
+
+  .form .btn span {
+    display: none;
+  }
+
+  .form .btn img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 30px;
+  }
+
+  .card__inner .img-holder {
+    top: 15px;
+  }
+
+  .promo {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form input {
+    font-size: 18px;
+  }
+
+  .products__item p {
+    font-size: 12px;
+  }
+
+  .products__item {
+    padding: 5px 10px;
+  }
+
+  .products__item .img-holder svg {
+    width: 24px;
+    height: 33px;
+  }
+
+  .slick-track {
+    padding-bottom: 16px;
+  }
+
+  .card__title {
+    font-size: 22px;
+  }
+
+  .card__item {
+    width: 60%;
+  }
+
+  .item-name {
+    font-size: 17px;
+  }
+
+  .card__item-price p {
+    font-size: 20px;
+  }
+
+  .card__item-price {
+    border: 2px solid #B7002F;
+  }
+}
+
+@media (max-width: 400px) {
+  .card__title {
+    font-size: 16px;
+  }
+
+  .card__item-name {
+    font-size: 10px;
+  }
+
+  .item-name {
+    font-size: 12px;
+  }
+
+  .card__item-price p {
+    font-size: 14px;
+  }
+}
